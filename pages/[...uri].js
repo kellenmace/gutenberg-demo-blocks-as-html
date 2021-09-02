@@ -12,7 +12,7 @@ export default function SinglePost({ post }) {
   return (
     <Layout>
       <article className="blog-post">
-        <h1>{title}</h1>
+        <h1 className="post-title">{title}</h1>
         <div>{parseHtml(content)}</div>
       </article>
     </Layout>

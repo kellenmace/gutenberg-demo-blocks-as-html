@@ -1,5 +1,6 @@
 import { gql } from "@apollo/client";
 import { client } from "../lib/apolloClient";
+import Layout from "../components/Layout";
 import PostCard from "../components/PostCard";
 
 const GET_POSTS = gql`
@@ -16,16 +17,16 @@ const GET_POSTS = gql`
 
 export default function Blog({ posts }) {
   return (
-    <>
+    <Layout>
       <h1>Blog</h1>
-      <ul>
+      <ul className="posts-list">
         {posts.map((post) => (
           <li key={post.databaseId}>
             <PostCard post={post} />
           </li>
         ))}
       </ul>
-    </>
+    </Layout>
   );
 }
 

@@ -67,6 +67,31 @@ body {
   color: var(--color-gray-2);
 }
 
+h1 {
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 1.7rem;
+  line-height: 1.3;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+h6 {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
 a {
   color: inherit;
 }
@@ -75,4 +100,36 @@ main {
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.posts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.posts-list li {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-2);
+}
+
+.posts-list li > a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.posts-list li + li {
+  margin-top: 2rem;
+}
+
+.blog-post {
+  padding: 4rem;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-2);
+}
+
+.post-title {
+  margin-bottom: 2rem;
 }
